@@ -1,0 +1,27 @@
+.edit-user-details-block
+{
+
+}
+.user-detail-form
+{
+  background-color: #ccc;
+  margin-top: 40px;
+
+}
+label
+{
+  text-align:left !important;
+}
+.edit-user-details-heading
+{
+  padding-bottom:20px;
+  border-bottom:1px solid #ccc;
+
+}
+form{
+  padding-top:20px;
+}
+.update-btn
+{
+  margin-bottom:20px;
+}

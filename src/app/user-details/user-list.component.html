@@ -1,0 +1,38 @@
+<div class="container user-list-block">
+  <div class="row">
+    <h3 class="heading pull-left">User Details</h3>
+    <a routerLink="adduser" (click)="onAddUser()"><button class="btn btn-success pull-right add-btn">Add</button></a>
+  </div>
+
+  <table class="table table-striped table-responsive user-details-table">
+    <thead>
+    <tr>
+      <th>ID</th>
+      <th>Name</th>
+      <th>Surname</th>
+      <th>BirthDate</th>
+      <th>Phone</th>
+      <th>City</th>
+      <th>Street</th>
+      <th>Number</th>
+      <th>Actions</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let user of data?.userList">
+      <td>{{user.id}}</td>
+      <td>{{user.name}}</td>
+      <td>{{user.surname}}</td>
+      <td>{{user.birthDate}}</td>
+      <td>{{user.phone}}</td>
+      <td>{{user.city}}</td>
+      <td>{{user.street}}</td>
+      <td>{{user.number}}</td>
+      <td>
+        <a routerLink="edituser" (click)="onEditUser(user.id)"><button class="btn btn-primary">Edit</button></a>
+        <a><button class="btn btn-danger">Delete</button></a>
+      </td>
+    </tr>
+    </tbody>
+  </table>
+  </div>
